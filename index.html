@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      *{
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    font-family:cursive;
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  header {
+    background-color: #333;
+    color: black;
+    padding: 10px;
+  }
+  nav{
+    background-color: yellow;
+    justify-content: flex-end;
+    display:flex;
+  }
+  nav h1{
+    margin-right:820px;
+    text-decoration: underline;
+  }
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-flex;
+    justify-content: right;
+    
+  }
+  
+  nav ul li a {
+    color: black;
+    text-decoration: none;
+    margin: 20px;
+  }
+  
+  section {
+    padding: 20px;
+  }
+  
+  #projects {
+    /* margin-bottom: 20px; */
+    color: ghostwhite;
+    background-color:grey;
+
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  form input,
+  form textarea {
+    width: 50%;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  form button {
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: cursive;
+  }
+  #about{
+    color: white;
+    background-color: grey;
+    display: flex;
+  }
+  img{
+    height: 100px;
+    width: 100px;
+    margin-left: 100px;
+    border-radius: 50%;
+    position: relative;
+    transition: transform 0.5s ease;
+  }
+  #home{
+    color: white;
+    background-color: grey;
+  }
+#contact {
+    /* border: 2px solid black; */
+    background-color: grey;
+    color:  ghostwhite;
+    display: block;
+    
+}
+a:hover{
+    filter:blur(1px);
+}
+button:hover{
+    
+    box-shadow: 0 0 10px lightgray ;
+}
+input{
+    border: 1px solid black;
+    border-radius: 5px;
+}
+textarea{
+    border: 1px solid black;
+    border-radius: 5px;
+}
+h2{
+    color: black;
+}
+span {
+    color: red;
+}
+img:hover{
+    transform: rotate(3600deg) scale(7);
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>My <span>Portfolio</span> </h1>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h2>Welcome to my portfolio!</h2>
+    <p>This is a showcase of my work and skills.</p>
+  </section>
+
+  <section id="about">
+    <h2>About Me:</h2>
+    <p>Hello There! I'm Soumyadeep Saha Roy,I'm from Burdwan,West Bengal. <br> I completed my B.Tech in Electrical Engineering from Academy of Technology,in the year of 2022. <br>My technical skills are Core JAVA , Oracle Sql and I have some fundmental knowledge on HTML and CSS.</p>
+    <img src="5kb.jpeg" alt="">
+  </section>
+
+  <section id="projects">
+    <h2>Projects:</h2>
+    <div class="project">
+      <h3>IoT-based Weather Monitoring System</h3>
+      <p>The IoT-based weather monitoring system is designed to provide real-time weather
+        information using Internet of Things (IoT) technology. It consists of weather sensors
+        deployed in various locations, collecting data such as temperature, humidity, wind
+        speed, and rainfall. The sensor data is transmitted wirelessly to a central server or
+        cloud platform, where it is processed and analyzed. Users can access the weather
+        information through a mobile application or a web interface, enabling them to stay
+        updated on current weather conditions and receive alerts or notifications. This
+        system enhances weather forecasting accuracy, facilitates decision-making for
+        outdoor activities, and contributes to environmental monitoring and research.
+        </p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me:</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+      <br>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+</body>
+</html>
+</body>
+</html>
